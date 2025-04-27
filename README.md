@@ -80,21 +80,22 @@ The data contains demographic details, work-related metrics and attrition flag.
 Setup environment:
 
 ```
-pandas - Digunakan untuk manipulasi data dan analisis data.
+# Membuat virtual environment baru
+python3 -m venv data-science
 
-numpy - Digunakan untuk komputasi numerik, operasi array, dan aljabar linear.
+# Aktivasi environment
+# Untuk Windows
+data-science\Scripts\activate
 
-scikit-learn - Digunakan untuk machine learning, termasuk algoritma klasifikasi, regresi, clustering, dan evaluasi model.
+# Untuk MacOS/Linux
+source data-science/bin/activate
 
-matplotlib - Digunakan untuk visualisasi data dalam bentuk grafik 2D.
+# Install dependensi
+pip install -r requirements.txt
 
-seaborn - Library visualisasi berbasis matplotlib yang memberikan interface yang lebih mudah untuk membuat grafik statistik.
+# Menjalankan aplikasi streamlit
+streamlit run aplikasi.py
 
-scipy - Digunakan untuk komputasi ilmiah, termasuk optimasi, integrasi, interpolasi, eigenvalue, dll.
-
-statsmodels - Digunakan untuk analisis statistik dan model statistik.
-
-imbalanced-learn - Digunakan untuk menangani masalah ketidakseimbangan kelas dalam dataset untuk machine learning.
 ```
 
 ## Business Dashboard
